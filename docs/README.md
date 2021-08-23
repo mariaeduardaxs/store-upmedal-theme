@@ -58,3 +58,28 @@ If the process runs without any errors, the following message will be displayed:
 This will enable you to see the applied changes in real time, through the account and workspace in which you are working. 
 
 If everything looks good, you can create a pull request to colaborate with Store Upmedal!
+
+### Tasks
+
+1. O que precisa cumprir para esse desafio:
+    - [x]  Flex layout para ciar cores em CSS
+    - [x]  Slider layout para mostrar produtos em destaque 
+    - [x]  Criar componente Tab layout para separar produtos por categoria
+    - [x]  Criar filtro para puxar a lista de produtos por categoria
+    - [x]  Criar um bloco de lista de produto (8 itens por categoria)
+    - [x]  Criar e estilizar Minicart para lista dos produtos no carrinho
+    - [x]  Ao clicar no produto ir para a tela com Product Summary
+    - [x]  Estilizar página de produto
+    - [x]  Layout mobile
+    - [x]  Criar um componente customizado para falar com suporte no whatsapp no footer
+    - [x]  Estilizar footer
+    - [x]  Criar um componente customizado para cadastrar leads (possíveis clientes prospectos) - Utilizando components com React
+  
+            Campos Necessários:
+              ○ Nome
+              ○ Email
+              ○ Telefone
+              
+      Componente em: [cadastroscomponent](https://github.com/mariaeduardaxs/cadastroscomponent)
+    - [ ] Trazer o conteúdo das leads cadastradas no back-end com a API Gateway AWS
+    - [ ] Opcional - Criar um item no admin da vtex para trazer o conteúdo das leads cadastradas na API Gateway AWS
