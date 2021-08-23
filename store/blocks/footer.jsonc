@@ -54,7 +54,7 @@
    "props": {
      "href": "/cadastro",
       "label": "Cadastro",
-      "displayMode": "button",
+      "displayMode": "button"
    }
  },
  "image#Cadastro": {
@@ -79,11 +79,12 @@
      "image#Desafios"
    ],
    "props": {
-     "href": "/desafios?map=ft"
+     "href": "/desafios?map=ft",
       "label": "Desafios",
-      "displayMode": "button",
+      "displayMode": "button"
    }
  },
+
  "image#Desafios": {
    "props": {
      "src": "https://img.icons8.com/ios-glyphs/30/26e07f/trophy.png",
@@ -100,6 +101,7 @@
      "blockClass": "container"
    }
  },
+
  "link.product#Loja": {
    "children": ["image#Loja"],
    "props": {
@@ -126,17 +128,17 @@
  "link.product#Suporte": {
    "children": ["image#Loja"],
    "props": {
-     "href": "https://api.whatsapp.com/send?phone=5548996915718&text=Ol%C3%A1!%20Ficou%20com%20alguma%20d%C3%BAvida%3F%20Fale%20com%20um%20representante%20da%20UPMedal"
+     "href": "https://api.whatsapp.com/send?phone=5548996915718&text=Ol%C3%A1!%20Ficou%20com%20alguma%20d%C3%BAvida%3F%20Fale%20com%20um%20representante%20da%20UPMedal",
      "target": "_blank",
      "label": "Suporte",
-     "displayMode": "button",
+     "displayMode": "button"
    }
  },
  "image#Suporte": {
    "props": {
      "src": "https://icons8.com/icon/62855/whatsapp",
      "width": "45px",
-     "blockClass": "ImagensFooter"
+     "blockClass": "footericons"
    }
  }
   //Encerra footer
