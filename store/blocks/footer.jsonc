@@ -52,8 +52,8 @@
      "image#Cadastro"
    ],
    "props": {
-     "href": "/cadastro",
-      "label": "Cadastro",
+     "href": "/cadastros",
+      "label": "Cadastros",
       "displayMode": "button"
    }
  },
