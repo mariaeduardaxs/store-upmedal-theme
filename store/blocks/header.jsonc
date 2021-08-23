@@ -1,79 +1,124 @@
+// criar header desktop
 {
   "header": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
+  
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+      "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
+  
   "header-layout.desktop": {
     "children": [
       "sticky-layout#desktop"
     ]
   },
+  
   "sticky-layout#desktop": {
     "props": {
       "blockClass": "sticky-header"
     },
     "children": ["flex-layout.row#desktop"]
   },
+  
+  // criar linha para header
+  // colocar todos os itens do header no desktop: 1 coluna logo, 2 colunas espaço, 1 coluna barra de pesqusa, 1 coluna login, 1 coluna carrinho
+    
   "flex-layout.row#desktop": {
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
-      "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
-    ]
+      "props": {
+        "horizontalAlign": "center",
+        "verticalAlign": "center",
+        "preventHorizontalStretch": true,
+        "preventVerticalStretch": true,
+        "fullWidth": true
   },
+      
+  "children": [
+        "flex-layout.col#logo-desktop",
+        "flex-layout.col#spacer",
+        "search-bar",
+        "flex-layout.col#spacer",
+        "login",
+        "minicart.v2"
+      ]
+  },
+  
+  //definir espaço da barra de pesquisa
+  
   "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
+      "props": {
+        "width": "grow"
+      }
   },
+  
+  // inserir logo 
+  
   "flex-layout.col#logo-desktop": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["logo"]
+      "props": {
+        "verticalAlign": "middle"
+      },
+      "children": ["logo"]
   },
+  
   "logo": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
-    }
+      "props": {
+        "title": "Logo",
+        "href": "/",
+        "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
+        "width": "150"
+      }
   },
+  
+  //criar header mobile
+  
   "header-layout.mobile": {
-    "children": ["sticky-layout#mobile"]
+      "children": ["sticky-layout#mobile"]
   },
+  
   "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
+      "children": ["flex-layout.row#mobile"]
   },
+  
+  // colocar todos os itens do header no mobile
+    
   "flex-layout.row#mobile": {
-    "children": [
-      "drawer",
-      "logo",
-      "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
-    ],
-    "props": {
-      "blockClass": "main-header-mobile",
-      "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": true,
-      "fullWidth": true
-    }
+      "children": [
+        "drawer",
+        "logo",
+        "flex-layout.col#spacer",
+        "search-bar",
+        "login",
+        "minicart.v2"
+      ],
+      "props": {
+        "blockClass": "main-header-mobile",
+        "preventHorizontalStretch": true,
+        "preserveLayoutOnMobile": true,
+        "fullWidth": true
+      }
   },
+    
   "drawer": {
-    "children": []
+      "children": []
+    },
+  
+    // inserir logo
+  
+    "flex-layout.col#logomobile": {
+      "props": {
+        "verticalAlign": "middle",
+        "width": "30%"
+      },
+      "children": ["logo#mobile"]
+    },
+    "logo#mobile": {
+      "props": {
+        "title": "Logo",
+        "href": "/",
+        "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
+        "width": "80"
+      }
+    }
+  
+    //encerrar header
   }
-}

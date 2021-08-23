@@ -1,7 +1,60 @@
+// definir organização da página de produtos
+
 {
-  "store.product": {
-    "children": [
-      
-    ]
-  }
+	"store.product": {
+		"children": ["breadcrumb", "flex-layout.row#main"]
+	},
+
+	//inserir 1 linha e 2 colunas com as informacoes de cada produto
+
+	"flex-layout.row#main": {
+		"props": {
+			"marginTop": 10
+		},
+		"children": ["flex-layout.col#left", "flex-layout.col#right"]
+	},
+	"flex-layout.col#left": {
+		"children": ["product-images"]
+	},
+	"product-images": {
+		"props": {
+			"width": 500
+		}
+	},
+
+	// inserir informacoes disponiveis na pdp
+
+	"flex-layout.col#right": {
+		"children": [
+			"vtex.store-components:product-name",
+			"product-identifier.product",
+			"flex-layout.row#qty-sku",
+			"product-price",
+			"shipping-simulator",
+			"buy-button"
+		]
+	},
+	"flex-layout.row#qty-sku": {
+		"children": ["sku-selector", "product-quantity"]
+	},
+	"sku-selector": {
+		"props": {
+			"hideImpossibleCombinations": false,
+			"visibility": true
+		}
+	},
+	"product-quantity": {
+		"props": {
+			"warningQuantityThreshold": 900,
+			"showUnit": true
+		}
+	},
+	"product-price": {
+		"props": {
+			"showSavings": true,
+			"showListPrice": true
+		}
+	}
+
+	//encerrar pdp
 }

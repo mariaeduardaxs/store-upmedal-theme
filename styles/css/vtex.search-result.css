@@ -1,0 +1,39 @@
+.searchResultContainer {
+    padding: 0 20% !important;
+    background-color: #303030;
+    min-height: 100vh;
+    padding-bottom: 50px !important;
+}
+.orderByButton, .filterPopupTitle, .orderByText {
+    background-color: #212121;
+    color: #fff;
+}
+.orderByOptionItem {
+    background-color: #212121;
+    color: #fff;
+}
+.galleryTitle--layout {
+    color: #fff;
+}
+.galleryItem {
+    margin:0 5% 5% 5%;
+    background-color: #212121;
+    border-radius: 5px;
+    padding: 0;
+}
+.gallery {
+    justify-content: space-between;
+    padding-top: 1%;
+    border-radius: 20px;
+}
+
+.gallery--galleryHome {
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+  }
+  .galleryItem--galleryHome {
+    flex-basis: 100%!important;
+    max-width: 100%!important;
+  }

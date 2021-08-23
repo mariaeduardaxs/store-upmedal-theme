@@ -1,0 +1,31 @@
+.listContainer {
+    background-color: #212121;
+}
+
+:global(.vtex-button):hover {
+    background-color: #212121;
+} 
+
+.listItemActive :global(.vtex-button){
+    border: none;
+    border-radius: 0;
+    background-color: #212121;
+}
+
+.listItem :global(.vtex-button) {
+    background-color: #212121;
+    border: 0px solid #212121;
+    border-radius: 0;
+} 
+
+.listItemActive {
+    border-bottom: 2px solid #4ED705;
+} 
+
+.flexRowContent--footer{
+    background-color: #303030;
+} 
+
+.flexCol {
+    background-color: #303030;
+} 

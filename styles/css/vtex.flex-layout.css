@@ -1,0 +1,44 @@
+.flexRow {
+    background: #212121;
+}
+  
+.flexCol--header{
+    width: 80%;
+}
+
+.flexRow--productItem {
+    margin: 2rem 0;
+}
+
+.flexRowContent--main-header-mobile {
+    color: #212121;
+}
+
+.stretchChildrenWidth {
+  border-top: #59ff00;
+}
+
+.flexRow--footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 56px;
+    z-index: 3;
+}
+
+.flexRowContent--footer {
+    padding: 0;
+    padding-top: 5px;
+    justify-content: space-around;
+    background-color: #424242;
+}
+
+.flexCol--product-main {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.gallery {
+    border-radius: 20px;
+}

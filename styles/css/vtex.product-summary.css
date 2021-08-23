@@ -1,0 +1,52 @@
+.container--productshelf {
+	background-color: #424242;
+	margin: 20px 20px;
+	height: auto;
+	box-shadow: 1px 1px 10px #212121;
+	padding: 0px;
+	min-height: 480px;
+}
+
+.productBrand {
+    color:#4ED705;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+  
+.buyButton :global(.vtex-button) {
+    border-radius: 0;
+    border: 2px solid #4ED705;
+}
+
+.buyButton :global(.vtex-button):hover {
+	background-color: #4ED705;
+}
+
+.sellingPrice {
+    color: #59ff00;
+    text-align: center;
+}
+
+.imageContainer {
+    padding: 0px;
+    background-color: #ffffff;
+}
+
+.nameContainer {
+	justify-content: center;
+}
+
+.sliderChildrenContainer--shelf {
+	justify-content: center;
+    background-color: #424242;
+}
+
+.buyButton {
+	justify-content: center;
+    background-color:#4ED705;
+}
+
+.buyButtonText {
+	justify-content: center;
+    color: #212121;
+}

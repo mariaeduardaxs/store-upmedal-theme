@@ -1,0 +1,47 @@
+.sliderLayoutContainer{
+    flex-direction: column;
+    max-width: 915px;
+    margin: 2rem auto;
+}
+
+.sliderArrows {
+    color: #59FF00;
+    bottom: 0;
+}
+
+.paginationDotsContainer :global(.vtex-slider-layout-0-x-paginationDot--isActive) {
+    background-color: #59FF00;
+}
+
+.paginationDotsContainer {
+    margin-top: 2rem;
+    position: relative;
+}
+  
+.caretIcon {
+    color:#59FF00;
+}
+  
+.sliderLayoutContainer--shelf {
+    width: 915px;
+}
+
+.imageElement--carousel {
+    border-radius: 20px;
+}
+
+.slideChildrenContainer--shelf {
+    background-color: #424242;
+    border-radius: 10px;
+    width: 90%;
+    justify-content: center;
+    align-items: center
+}
+
+.slideChildrenContainer {
+    background-color: #212121;
+}
+
+.sliderLayoutContainer--carousel {
+    background-color: #212121;
+}

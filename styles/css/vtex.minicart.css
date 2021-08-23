@@ -1,0 +1,46 @@
+.cartIcon {
+    color: #59ff00;
+}
+
+.minicartCheckoutButton {
+    color:#59ff00;
+}
+
+.openIconContainer :global(.vtex-button) {
+	background-color: #212121;
+}
+
+.openIconContainer :global(.vtex-button):hover {
+	background-color: #212121;
+}
+
+.popupChildrenContainer {
+	background-color: red;
+}
+
+.minicartSideBarContentWrapper {
+	background-color: #424242;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+::-webkit-scrollbar {
+	width: 10px;
+	background: #424242;
+}
+::-webkit-scrollbar-thumb {
+	background: #303030;
+	border-radius: 10px;
+}
+
+.minicartSideBarContentWrapper {
+	background-color: #424242;
+}
+
+.sellingPrice {
+	color: #ffffff;
+	padding: 10px;
+	font-size: 25px;
+	text-align: center;
+}
