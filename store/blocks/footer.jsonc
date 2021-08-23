@@ -105,7 +105,9 @@
  "link.product#Loja": {
    "children": ["image#Loja"],
    "props": {
-     "href": "/kit-upmedal"
+     "href": "/kit-upmedal",
+     "label": "Loja",
+     "displayMode": "button"
    }
  },
  "image#Loja": {
