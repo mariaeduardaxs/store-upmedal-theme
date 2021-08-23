@@ -1,26 +1,143 @@
+
+ // Criar footer para desktop e para mobile
 {
-  "footer": {
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
-  },
-  "footer-layout.desktop": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
-  },
-  "footer-layout.mobile": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
-  },
-  "flex-layout.row#footer": { 
-    "children": [
-      "image"
-    ]
-  },
-  "image": {
-    "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
-    }
-  }
+ "footer": {
+   "blocks": [
+     "footer-layout.desktop", 
+     "footer-layout.mobile"
+   ]
+ },
+ 
+ "footer-layout.desktop": {
+   "children": [
+     "flex-layout.row#footer"
+   ],
+   "props": {
+     "blockClass": "footerContainer"
+   }
+ },
+ "footer-layout.mobile": {
+   "children": [
+     "flex-layout.row#footer"
+   ],
+   "props": {
+     "blockClass": "footerContainer"
+   }
+ },
+ 
+ // Criar uma linha com 4 colunas (1 para cada item) no footer
+ 
+ "flex-layout.row#footer": {
+   "children": [
+     "flex-layout.col#Cadastro",
+     "flex-layout.col#Desafios",
+     "flex-layout.col#Loja",
+     "flex-layout.col#Suporte"
+   ],
+   "props": {
+     "blockClass": "footerContainer1"
+   }
+ },
+ "flex-layout.col#Cadastro": {
+   "children": [
+     "link.product#Cadastro"
+   ],
+   "props": {
+     "blockClass": "container"
+   }
+ },
+ 
+ "link.product#Cadastro": {
+   "children": [
+     "image#Cadastro"
+   ],
+   "props": {
+     "href": "/cadastro",
+      "label": "Cadastro",
+      "displayMode": "button",
+   }
+ },
+ "image#Cadastro": {
+   "props": {
+     "src": "https://img.icons8.com/ios-glyphs/30/26e07f/user--v1.png",
+     "width": "45px",
+     "blockClass": "footericons"
+   }
+ },
+ 
+ "flex-layout.col#Desafios": {
+   "children": [
+     "link.product#Desafios"
+   ],
+   "props": {
+     "blockClass": "container"
+   }
+ },
+ 
+ "link.product#Desafios": {
+   "children": [
+     "image#Desafios"
+   ],
+   "props": {
+     "href": "/desafios?map=ft"
+      "label": "Desafios",
+      "displayMode": "button",
+   }
+ },
+ "image#Desafios": {
+   "props": {
+     "src": "https://img.icons8.com/ios-glyphs/30/26e07f/trophy.png",
+     "width": "45px",
+     "blockClass": "footericons"
+   }
+ },
+ 
+ "flex-layout.col#Loja": {
+   "children": [
+     "link.product#Loja"
+   ],
+   "props": {
+     "blockClass": "container"
+   }
+ },
+ "link.product#Loja": {
+   "children": ["image#Loja"],
+   "props": {
+     "href": "/kit-upmedal"
+   }
+ },
+ "image#Loja": {
+   "props": {
+     "src": "https://img.icons8.com/ios-glyphs/30/26e07f/fast-cart.png",
+     "width": "45px",
+     "blockClass": "footericons"
+   }
+ },
+ 
+ "flex-layout.col#Suporte": {
+   "children": [
+     "link.product#Suporte"
+   ],
+     "props": {
+     "blockClass": "container"
+   }
+ },
+ 
+ "link.product#Suporte": {
+   "children": ["image#Loja"],
+   "props": {
+     "href": "https://api.whatsapp.com/send?phone=5548996915718&text=Ol%C3%A1!%20Ficou%20com%20alguma%20d%C3%BAvida%3F%20Fale%20com%20um%20representante%20da%20UPMedal"
+     "target": "_blank",
+     "label": "Suporte",
+     "displayMode": "button",
+   }
+ },
+ "image#Suporte": {
+   "props": {
+     "src": "https://icons8.com/icon/62855/whatsapp",
+     "width": "45px",
+     "blockClass": "ImagensFooter"
+   }
+ }
+  //Encerra footer
 }
